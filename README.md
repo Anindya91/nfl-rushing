@@ -1,24 +1,30 @@
-# README
+## NFL Rushing
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby: `2.6.5`
 
-Things you may want to cover:
+* Rails: `6.0.0`
 
-* Ruby version
+## Installation
 
-* System dependencies
+1. Clone repository
+2. cd into repository and run
+```bash
+bundle install
+yarn install
+```
+If you don't have bundler try running `gem install bundler` first.
 
-* Configuration
+* How to run the test suite: `rails test`
 
-* Database creation
+## Usage
+```bash
+rails s
+```
 
-* Database initialization
+## Libraries used
+1. jQuery
+2. jQuery [Datatables](https://datatables.net/)
 
-* How to run the test suite
+Open `http://localhost:3000` on your browser to see the table.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* `rushing.json` is available inside public folder: `http://localhost:3000/rushing.json`.
