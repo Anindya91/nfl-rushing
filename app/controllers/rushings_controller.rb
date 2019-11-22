@@ -2,6 +2,6 @@ class RushingsController < ApplicationController
 
   # GET /rushings
   def index
-    @rushings = Rushing.all
+    @rushings = Rushing.from_json
   end
 end

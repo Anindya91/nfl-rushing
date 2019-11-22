@@ -1,0 +1,21 @@
+development:
+  clients:
+    default:
+      database: rushing_development
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: true
+
+test:
+  clients:
+    default:
+      database: rushing_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
+  options:
+    raise_not_found_error: true
